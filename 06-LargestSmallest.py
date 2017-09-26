@@ -1,6 +1,7 @@
 def smallLarge(theList):
     print(theList)
-    #Loops through the list
+    smallest = largest = None
+    #Loops through the list, also prevent errors with empty list as it skips the for loop if list is empty
     for i in range(0,theList.__len__()):
         #Assaign the initial values to smallest and largest
         if i == 0:
@@ -16,6 +17,6 @@ def smallLarge(theList):
     return(smallest, largest)
 
 #test
-print(smallLarge([10,2,3,4,10,34,5,6,7]))
+print(smallLarge([]))
 (smallest,largest) = smallLarge([10,2,3,4,10,34,5,6,7])
 print("Largest: "+str(smallest)+" Smallest: "+str(largest))
