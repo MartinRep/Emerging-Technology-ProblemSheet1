@@ -8,7 +8,6 @@ sumNumber=0
 #Gets and converts the result of (int) factorial into String
 result = str(factorial(100))
 print ("Factorial of 100: "+result)
-
 #Loops through the String char by char. Converts it to the Integer and add it to the sumNumbre variable
 for i in range(0, len(result)):
     sumNumber += int(result[i])
